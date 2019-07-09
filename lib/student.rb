@@ -4,5 +4,5 @@ require 'interactive_record.rb'
 require 'pry'
 
 class Student < InteractiveRecord
-  creates_attr_acc
+  define_attributes
 end
