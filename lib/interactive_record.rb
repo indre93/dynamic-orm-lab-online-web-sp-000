@@ -24,7 +24,12 @@ class InteractiveRecord
     self
   end
 
-  def self.creates_attr_acc
+  def self.create(name:, grade:)
+    student = Student.new(name, grade)
+    student.save
+  end
+
+  def self.define_attributes
     self.column_names.collect do |column_name|
       attr_accessor(column_name)
     end
