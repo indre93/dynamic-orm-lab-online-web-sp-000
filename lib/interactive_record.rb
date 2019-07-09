@@ -26,7 +26,7 @@ class InteractiveRecord
   end
 
   def self.create(*define_attributes)
-    student = self.class.new(*define_attributes)
+    student = self.class.new(define_attributes)
     student.save
   end
 
