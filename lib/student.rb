@@ -5,5 +5,4 @@ require 'pry'
 
 class Student < InteractiveRecord
   define_attributes
-  binding.pry
 end
