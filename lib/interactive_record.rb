@@ -30,8 +30,8 @@ class InteractiveRecord
   end
 
   def self.define_attributes
-    self.column_names.collect do |column_name|
-      attr_accessor(column_name)
+    self.column_names.collect do |col_name|
+      attr_accessor col_name.to_sym
     end
   end
 
