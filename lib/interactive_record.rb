@@ -21,8 +21,8 @@ class InteractiveRecord
     attributes_hash.each do |keys, value|
       self.send("#{keys}=", value)
     end
-    self.create
     self.save
+    self
   end
 
   def self.create(define_attributes)
